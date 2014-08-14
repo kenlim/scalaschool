@@ -9,7 +9,6 @@ class WeekTwoTest extends FlatSpec with Matchers {
   }
   
   object CarRegistrar {
-
     def getNextRegistrationId: Int = {
       // this is stuck returning the number 1
       // how would you make it increase?
@@ -31,8 +30,8 @@ class WeekTwoTest extends FlatSpec with Matchers {
     val second = CarRegistrar.getNextRegistrationId
     val third = CarRegistrar.getNextRegistrationId
 
-    third > second should be true
-    second > first should be true
+    third > second should be(true)
+    second > first should be(true)
   }
 
   "Building cars with the car registrar" should "assign a default registration id" in {
