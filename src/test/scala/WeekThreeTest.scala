@@ -20,7 +20,7 @@ class WeekThreeTest extends FlatSpec with Matchers {
 
   "Scala" should "not allow you to compare non-alike types" in {
     // yeah, this only works in Javascript, not here.
-//    true && 1 should be (true)
+    true && 1 should be (true)
   }
 
   "If-blocks" should "be able to use the boolean results to make decisions" in  {
