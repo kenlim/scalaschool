@@ -5,23 +5,24 @@ class WeekThreeTest extends FlatSpec with Matchers {
   "simple logic" should "return boolean answers" in {
     // Logic operators look the same in Scala as elsewhere. Fill in the blanks:
 
-    3 > 1 should be(???)
-    3 < 1 should be(???)
-    1 >= 1 should be (???)
-    1 <= 1 should be (???)
+    3 > 1 should be(true)
+    3 < 1 should be(false)
+    1 >= 1 should be (true)
+    1 <= 1 should be (true)
 
-    !true should be(???)
-    1 == 1 should be (???)
-    1 != 0 should be (???)
+    !true should be(false)
+    1 == 1 should be (true)
+    1 != 0 should be (true)
 
-    true && false should be(???)
-    true || false should be(???)
+    true && false should be(false)
+    true || false should be(true)
   }
 
-  "Scala" should "not allow you to compare non-alike types" in {
-    // yeah, this only works in Javascript, not here.
-    true && 1 should be (true)
-  }
+//  "Scala" should "not allow you to compare non-alike types" in {
+//    // yeah, this only works in Javascript, not here.
+//
+//    true && 1 should be (true)
+//  }
 
   "If-blocks" should "be able to use the boolean results to make decisions" in  {
     def isBiggerThan3(input: Int) = {
