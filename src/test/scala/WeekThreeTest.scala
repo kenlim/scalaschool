@@ -49,7 +49,7 @@ class WeekThreeTest extends FlatSpec with Matchers {
       q match {
         case 1 => "a"
         case 2 => "a pair of"
-        case _ => "a conflict of" // the underscore is a catch-all
+       // case _ => "a conflict of" // the underscore is a catch-all
       }
     }
 
