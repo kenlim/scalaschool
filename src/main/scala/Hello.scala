@@ -1,5 +1,7 @@
-object Hello {
-  def main(args: Array[String]): Unit = {
-    println("Hello, world!")
+object Hello extends App {
+  import scala.io.Source
+  val filename = "fileopen.scala"
+  for (line <- Source.fromFile(filename).getLines) {
+    println(line)
   }
 }
